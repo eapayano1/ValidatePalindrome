@@ -13,3 +13,18 @@ fun validatePalindromeLetter(letter:String): Boolean{
     }
     return false
 }
+fun validatePalindromeNumber(number:Int):Boolean{
+    var digit=0
+    var reve=0
+    var num=number
+    while(num!=0)//Revertir el numero
+    {
+        digit=num%10
+        reve=(reve*10)+digit
+        num=num/10
+    }
+    if(reve==number){
+        return true
+    }
+    return false
+}

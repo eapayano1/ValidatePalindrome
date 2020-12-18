@@ -8,4 +8,10 @@ class SampleTest{
         val expected=true
         assertEquals(expected, actual)
     }
+    @Test
+    fun testValidatePalindromeNumber(){
+        val actual=validatePalindromeNumber(121)
+        val expected=true
+        assertEquals(expected,actual)
+    }
 }
